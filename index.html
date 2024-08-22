@@ -21,12 +21,12 @@ body{
     background-color:hsl(213, 44%, 95%);
 }
 
-.all{
+.container{
     width:100%;
     height:100vh;
     display:grid;
     grid-template-columns:240px 240px 240px 240px ;
-    grid-template-rows:270px 270px;
+    grid-template-rows:300px 300px;
     gap:30px;
     justify-content:center;
     align-content:center;
@@ -42,7 +42,7 @@ body{
 .image{
     display:flex;
     align-items:center;
-    margin-bottom:15px;
+    margin-bottom:20px;
     margin-left:20px;
     z-index:10;
 }
@@ -61,7 +61,8 @@ img{
     font-weight: 500;
     font-style: italic;
     padding-left:25px;
-    margin-bottom:10px;
+    font-size:20px;
+    margin-bottom:20px;
 }
 
 .paragraph-2{
@@ -121,24 +122,20 @@ img{
 }
 
 .card-4 .paragraph{
-    width:92%;
-    margin-bottom:5px;
+    margin-bottom:20px;
     font-size:20px;
-}
-
-.card-4 .paragraph-2{
-    width:93%
 }
 
 .comma{
     z-index:-4;
     position:absolute;
-    right:10%;
+    right:25%;
+    top:0;
 }
 
 .comma img{
     border:none;
-    width:150px;
+    width:100px;
     border-radius:0;
 }
 
@@ -179,7 +176,7 @@ img{
 
 
 @media(max-width:1080px){
-    .all{
+    .container{
         display:flex;
         flex-direction:column;
         align-items:center;
@@ -236,7 +233,7 @@ img{
   </style>
 </head>
 <body>
-  <div class="all">
+  <div class="container">
     <div class="card-1">
         <div class="comma"><img src="images/bg-pattern-quotation.svg" alt=""></div>
         <div class="image"><img src="images/image-daniel.jpg" alt="">
@@ -309,11 +306,5 @@ img{
     </div>
 
 </div>
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Mohmaed Ahmed</a>.
-  </div>
 </body>
 </html>
